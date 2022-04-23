@@ -1,0 +1,29 @@
+header {
+  background-color: #c3bfd3;
+  border: 5px solid #69ca0f;
+  padding: 25px
+}
+body {
+  background-color: #1c0f36;
+}
+li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+nav {
+
+  background-color: #599c77;
+  width: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.moto{
+    width: 50%;
+    fill: #FF4745;
+}
