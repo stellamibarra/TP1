@@ -1,10 +1,172 @@
-header {
-  background-color: #c3bfd3;
-  border: 5px solid #69ca0f;
-  padding: 25px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-  background-color: #1c0f36;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  background-color: aqua;
+}
+header {
+  background-color: #599c77;
+
+  padding: 25px;
+}
+aside {
+  background-color: #90972d;
+  padding: 25px;
+}
+section {
+  border: 1px solid rgb(8, 8, 8);
+}
+article {
+  border: 3px solid black;
+  padding: 25px;
+  background-color: #88262e;
+}
+footer {
+  border-top: 1px solid black;
+  background-color: #67c22b;
+}
+.container-central {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #a53131;
+}
+.main-content {
+  background-color: burlywood;
+  display: flex;
+}
+body {
+  background-color: #ffffff;
 }
 li {
   list-style: none;
@@ -13,7 +175,7 @@ li {
   color: #fff;
 }
 nav {
-  background-color: #599c77;
+  background-color: #9c9559;
   width: 100%;
 }
 ul {
@@ -22,19 +184,47 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
-.moto {
-  width: 50%;
+@font-face {
+  font-family: "FasterOne";
+  src: url("fonts/Faster_One/FasterOne-Regular.ttf");
 }
- @ font-face {
-    font-family: 'FasterOne';
-    src: url('fonts/Faster_One/FasterOne-Regular.ttf');
-  }
 
-.titulo-presentacion{
-  font-family: 'FasterOne';
+section {
+  margin-right: 5rem;
+  margin-left: 5rem;
+  padding: 5rem;
+}
+.lembikers{
+  border: 1px solid black;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+#lem1 {
+
+  background-image: url("../images/moto.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 100%;
+}
+.lembikers p{
+  font-family: "FasterOne";
+  font-size: 3rem;
   position: absolute;
-  top: 15%;
-  left: 15%;
-  color: rgb(80, 49, 49);
-  font-size: 8rem;
+  top: 80%;
+  left: 45%;
+  color: rgb(208, 212, 231);
+}
+.container-foto{
+  background-color: rgb(49, 153, 153);
+
+  
+}
+.container-foto img{
+ 
+  width: 20%;
+  padding: 20px;
+ 
+
+ 
 }
