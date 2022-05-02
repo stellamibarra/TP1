@@ -1,3 +1,42 @@
+.container{
+    display : grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+        "header header header header header header header header header header header header "
+        "section section section section section section section section section section section section"
+        "aside aside aside aside aside aside aside aside aside aside aside aside "
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    header{
+        grid-area: header;
+    }
+    .central{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+}
+header{
+    background-color: #572626;
+    
+}
+.central{
+    background-color: #4734b1;
+}
+aside{
+    background-color: #17b317;
+}
+footer{
+    background-color: #5a6d15;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -138,8 +177,6 @@ header {
 aside {
   background-color: #90972d;
   padding: 25px;
-  width: 40%;
-  
 }
 section {
   border: 1px solid rgb(8, 8, 8);
@@ -191,10 +228,6 @@ ul {
   src: url("fonts/Faster_One/FasterOne-Regular.ttf");
 }
 
-@font-face {
-  font-family: "GFSDidot";
-  src: url("fonts/GFS_Didot/GFSDidot-Regular.ttf");
-}
 section {
   margin-right: 5rem;
   margin-left: 5rem;
@@ -221,7 +254,6 @@ section {
   left: 45%;
   color: rgb(208, 212, 231);
 }
-
 .container-foto{
   background-color: rgb(40, 116, 116);
 
@@ -242,18 +274,4 @@ nav img {
  background-color: #c7acae;
  align-items: center;
   
-}
-h1 {
-  font-family: "GFSDidot";
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-}
-p{
-
-  font-family: "GFSDidot";
-  font-size: 1.1rem;
-  color: #fff;
-  text-align: justify;
-
 }
